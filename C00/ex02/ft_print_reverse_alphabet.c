@@ -12,8 +12,20 @@
 
 #include <unistd.h>
 
-int main(int argc, char const *argv[])
+void	ft_print_reverse_alphabet(void)
 {
-	
-	return 0;
+	char	c;
+
+	c = 'z';
+	while (c >= 'a')
+	{
+		write(1, &c, 1);
+		c--;
+	}
 }
+
+// int main(void)
+// {
+// 	ft_print_reverse_alphabet();
+// 	return 0;
+// }
